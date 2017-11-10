@@ -33,6 +33,7 @@
     <group id="sulu_menu" text="Sulu" description="Sulu plugin menu">
       <add-to-group group-id="MainMenu" anchor="last"/>
       <action id="sulu_help" class="actions.SuluHelpAction" text="Sulu Help" description="Opens the Sulu documentation"/>
+      <action id="sulu_repo" class="actions.SuluRepoAction" text="Sulu Git Repo" description="Opens the Sulu documentation"/>
     </group>
   </actions>
 
