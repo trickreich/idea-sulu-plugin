@@ -21,7 +21,8 @@
   -->
 
   <extensions defaultExtensionNs="com.intellij">
-    <projectConfigurable implementation="settings.SuluSettings"/>
+    <projectConfigurable instance="settings.SuluSettings"
+        displayName="Sulu"/>
   </extensions>
 
   <actions>
