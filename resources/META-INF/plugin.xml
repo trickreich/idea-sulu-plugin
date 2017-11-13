@@ -20,17 +20,18 @@
   <depends>com.intellij.modules.lang</depends>
   -->
 
+  <depends>com.intellij.modules.lang</depends>
+
   <extensions defaultExtensionNs="com.intellij">
-    <projectConfigurable instance="settings.SuluSettings"
-        displayName="Sulu"/>
+    <projectConfigurable instance="settings.SuluSettings" displayName="Sulu"/>
   </extensions>
 
   <actions>
     <!-- Add your actions here -->
     <group id="sulu_menu" text="Sulu" description="Sulu plugin menu">
-      <add-to-group group-id="MainMenu" anchor="last"/>
+      <add-to-group group-id="MainMenu" anchor="before" relative-to-action="HelpMenu"/>
       <action id="sulu_help" class="actions.SuluHelpAction" text="Sulu Help" description="Opens the Sulu documentation"/>
-      <action id="sulu_repo" class="actions.SuluRepoAction" text="Sulu Git Repo" description="Opens the Sulu documentation"/>
+      <action id="sulu_repo" class="actions.SuluRepoAction" text="Sulu Git Repo" description="Opens the Sulu repository"/>
     </group>
   </actions>
 
